@@ -10,14 +10,14 @@ pipeline {
                 sh 'mvn --version'
                 // sh 'mvn clean package'
             }
-            post {
-                success 
-                {
+            // post {
+                // success 
+                // {
                     //  echo 'Now Archiving..'
                 // archiveArtifact artifacts: '**/target/*.war' 
-                }
+                // }
                  
-            }
+            // }
         }
         stage('Test') {
             steps {
