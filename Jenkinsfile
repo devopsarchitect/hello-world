@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn --version'
                 // sh 'mvn clean package'
             }
-            post {S
+            post {
                 success 
                 {
                    /*  echo 'Now Archiving..'
