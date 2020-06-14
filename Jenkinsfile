@@ -8,13 +8,13 @@ pipeline {
                 sh 'export MAVEN_HOME=/opt/maven'
                 sh 'export PATH=$PATH:$MAVEN_HOME/bin'
                 sh 'mvn --version'
-                sh 'mvn clean package'
+                // sh 'mvn clean package'
             }
-            post {
+            post {S
                 success 
                 {
-                    echo 'Now Archiving..'
-                archiveArtifact artifacts: '**/target/*.war'
+                   /*  echo 'Now Archiving..'
+                archiveArtifact artifacts: '**/target/*.war' */
                 }
                  
             }
